@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kids Fun Coloring Books — Support</title>
+  <meta name="description" content="Support for the Kids Fun Coloring Books iOS app." />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; line-height: 1.5; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px; }
+    .card { border: 1px solid rgba(127,127,127,.35); border-radius: 14px; padding: 18px; margin: 14px 0; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 1.6rem; margin: 0 0 10px; }
+    h2 { margin: 0 0 8px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 0 20px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: .95em; }
+    .small { opacity: .85; font-size: .95rem; }
+    .toplink { display: inline-block; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="toplink" href="../">← Back</a>
+    <h1>Support</h1>
+    <p class="small">Kids Fun Coloring Books (iOS)</p>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email support: <a href="mailto:kidsfuncoloringbooks@gmail.com">kidsfuncoloringbooks@gmail.com</a></p>
+      <p class="small">Tip: include your iOS version and what you were doing when the issue happened.</p>
+    </div>
+
+    <div class="card">
+      <h2>Common Questions</h2>
+      <ul>
+        <li><strong>The app won’t open / freezes</strong> — Try closing the app and reopening. If it persists, restart your device.</li>
+        <li><strong>Colors/tools aren’t working</strong> — Make sure you’re using the latest app version from the App Store.</li>
+        <li><strong>I found a bug</strong> — Email us with steps to reproduce, screenshots, and device model if possible.</li>
+        <li><strong>Feature requests</strong> — Send ideas anytime. We love suggestions for new pages and tools!</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>About This App</h2>
+      <p>This app runs locally on your iOS device and does not connect to a backend server.</p>
+      <p class="small">If you need help with billing/refunds, Apple handles purchases and refunds through the App Store.</p>
+    </div>
+
+    <p class="small">Last updated: <span id="date"></span></p>
+  </main>
+
+  <script>
+    // purely local, no tracking
+    document.getElementById("date").textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
